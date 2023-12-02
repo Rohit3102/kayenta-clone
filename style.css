@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.cursor{
+    position: fixed;
+    z-index: 22;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0;
+    background-color: rgba(89, 89, 227, 0.86);
+}
+
+#main{
+    overflow: hidden;
+}
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.page1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.page1 .nav{
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+}
+
+.nav h4{
+   font-size: 1vw;
+   font-weight: 100;
+}
+
+.nav .nav-left img{
+   width: 16vw;
+}
+
+.nav .nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5vw;
+}
+
+.nav a{
+    padding: .5vw .9vw;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-radius: 3vw;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+}
+
+.page1 h1{
+    font-size: 6vw;
+    font-weight: 500;
+    margin-left: 40vw;
+    color: transparent;
+    -webkit-text-stroke:  .1vw #fff;
+}
+
+.page1 h2{
+    font-size: 6vw;
+    font-weight: 500;
+    margin-top: 7vw;
+    margin-left: 25vw;
+}
+
+
+.page1 h3{
+    margin-left: 48vw;
+    font-size: 6vw;
+    font-weight: 500;
+}
+
+.page1 button{
+    position: absolute;
+    right: 2vw;
+    bottom: 2vw;
+    font-size: 2vw;
+    padding: .5vw .9vw;
+    border-radius: 50%;
+}
+
+
+.page2{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 4vw;
+}
+
+.page2 h1{
+    text-align: center;
+    font-size: 4.1vw;
+    letter-spacing: -1px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.contianers{
+    margin-top: 4vw;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+}
+
+
+.contianers .content{
+    width: 33.9%;
+    height: 100%;
+    border-right: 1px solid black;    
+    border-top: 1px solid black;    
+    border-bottom: 1px solid black;   
+    transition: all ease 1s; 
+}
+
+.content h2{
+    font-size: 3vw;
+    font-weight: 300;
+    margin: 2vw;
+}
+
+.content p{
+    font-size: 1vw;
+    font-weight: 300;
+    margin: 0 2vw;
+    margin-top: 15vw;
+}
+
+
+
+.content button{
+    font-size: 1vw;
+    font-weight: 300;
+    margin: 2vw;
+    padding: .3vw .8vw;
+    border-radius: 3vw;
+    border: 1px solid #fff;
+}
+
+
+.page3{
+    width: 100%;
+    height: 80vh;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+
+.page3 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+.page4{
+    width: 100%;
+    height: 90vh;
+    background-color: #29372D;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    width: 33.9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card img{
+    width: 45%;
+}
+
+.card h1{
+    font-size: 3vw;
+    margin: 1vw 0;
+    font-weight: 300;
+}
+
+.card p{
+    font-size: 1.3vw;
+}
+
+.page5{
+    width: 100%;
+    height: 100vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 5vw;
+   overflow: hidden;
+}
+
+
+.page5 .solution{
+    width: 40%;
+    height: 100%;
+}
+
+.solution h2{
+    font-size: 1.2vw;
+    margin-top: 5vw;
+    color: rgba(0, 0, 255, 0.746);
+}
+
+.solution h1{
+    margin-top: 2vw;
+    font-size: 4.5vw;
+    line-height: 1;
+    font-weight: 300;
+}
+
+.solution button{
+    margin-top: 15vw;
+    font-size: 1vw;
+    padding: .6vw 1.7vw;
+    border-radius: 50px;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgb(47, 86, 186) ;
+    color: #fff;
+}
+
+.page5 .optimiz{
+    width: 45%;
+    height: 100vh;
+    padding: 2vw 0;
+
+}
+
+.optimiz .finc{
+    width: 80%;
+    height: 35%;
+    margin-top: 6vw;
+    margin-bottom: 29vw;
+    margin-left: 2vw;
+    transform: rotate(-3deg);
+}
+
+.optimiz .finc img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.finc h1{
+    position: absolute;
+    z-index: 3;
+    font-size: 3vw;
+    font-weight: 300;
+    margin: 3vw;
+}
+
+.finc h1 span{
+    color: #fff;
+}
+
+
+.page6{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #29372D;
+    color: #fff;
+
+}
+
+  .page6 header {
+    position: relative;
+    height: 50vh;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    font: 1rem helvetica,sans-serif;
+  }
+  .page6 header   p {
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+
+    .page6 header span {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateY(-50%);
+      width: 13px;
+      height: 13px;
+      background-color: black;
+      border-radius: 50%;
+    }
+
+footer {
+  z-index: 0;
+  width: 100%;
+  background-color: black;
+  font-size: .8vw;
+  color: rgba(255,255,255,0.5);
+  display: flex;
+  justify-content: center;
+  padding: 3vw 8vw;
+}
+footer header {
+    width: 100%;
+    position: relative;
+    gap: 1vw;
+}
+
+footer header h2 {
+      position: relative;
+      text-transform: uppercase;
+}
+
+
+footer header p {
+      line-height: 1.8;
+      color: rgba(255,255,255,0.5);
+    }
+
+    footer header .icon {
+      font-size: 1.1rem;
+      padding: 0.25rem 0.5rem 0.25rem 0;
+      cursor: pointer;
+      color: rgb(86, 177, 187);
+    }
+
+    .icon:hover {
+        animation: pulse 0.5s;
+        color: rgba(255,255,255,0.5);
+      }
+    
+
+   aside {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    padding: 0 2vw;
+   }
+    aside ul {
+      list-style-type: none;
+    }
+      aside li {
+        padding: 0.5vw 0;
+        cursor: pointer;
+      }
+        li:hover:not(:first-of-type) {
+          animation: pulse 0.5s;
+          color: rgb(86, 177, 187);
+        }
+      
+h3{
+    color: rgba(255,255,255,0.85);
+    font-size: 1.2vw;
+}
+
+@media (max-width:800px) {
+  footer {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
