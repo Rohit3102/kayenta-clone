@@ -13,12 +13,20 @@ html, body{
 .cursor{
     position: fixed;
     z-index: 22;
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
+    pointer-events: none;
     opacity: 0;
     background-color: rgba(89, 89, 227, 0.86);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5vw;
 }
+
+
 
 #main{
     overflow: hidden;
@@ -165,9 +173,7 @@ html, body{
 .page3{
     width: 100%;
     height: 80vh;
-    background-image: url();
-    background-position: center;
-    background-size: cover;
+    position: relative;
 }
 
 .page3 video{
@@ -175,6 +181,17 @@ html, body{
     height: 100%;
     object-fit: cover;
     opacity: 0;
+}
+
+.page3 .rohit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #29372D;
+    color: #fff;
+    padding: 2vw 4vw;
+    border-radius: 5vw;
 }
 
 .page4{
@@ -254,7 +271,6 @@ html, body{
     width: 45%;
     height: 100vh;
     padding: 2vw 0;
-
 }
 
 .optimiz .finc{
@@ -284,6 +300,16 @@ html, body{
     color: #fff;
 }
 
+#view{
+    margin-top: 15vw;
+    transform: rotate(3deg);
+    padding: .3vw 1vw;
+    background-color: rgb(253, 62, 62);
+    color: #fff;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: .3vw;
+}
 
 .page6{
     width: 100%;
@@ -376,7 +402,7 @@ footer header p {
       }
         li:hover:not(:first-of-type) {
           animation: pulse 0.5s;
-          color: rgb(86, 177, 187);
+          color: #29372D;
         }
       
 h3{
@@ -384,9 +410,191 @@ h3{
     font-size: 1.2vw;
 }
 
-@media (max-width:800px) {
+@media (max-width:600px) {
+
+
+    .cursor{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .page1{
+        height: 70vh;
+    }
+    
+    .page1 .nav{
+      padding: 4vw 3vw;
+    }
+    
+    .nav h4{
+       font-size: 1.7vw;
+    }
+    
+    .nav .nav-left img{
+       width: 20vw;
+    }
+    
+    .nav a{
+        font-size: 2vw;
+    }
+    
+    .page1 h1{
+        font-size: 8vw;
+        margin-left: 38vw;
+    }
+    
+    .page1 h2{
+        font-size: 8vw;
+        margin-top: 15vw;
+        margin-left: 15vw;
+    }
+    
+    
+    .page1 h3{
+        margin-left: 55vw;
+        font-size: 8vw;
+    }
+    
+    .page1 button{
+        right: 10vw;
+        bottom: 10vw;
+        font-size: 4vw;
+        padding: 2vw 2.5vw;
+    }
+    
+    
+    .page2{
+        min-height: 250vh;
+        padding-top: 15vw;
+    }
+    
+    .page2 h1{
+        font-size: 4.1vw;
+    }
+    
+    .contianers{
+        width: 100%;
+        height: 75vh;
+        display: block;
+    }
+    
+    
+    .contianers .content{
+        width: 100%;
+        pointer-events: none;
+    }
+    
+    .content h2{
+        font-size: 8vw;
+        margin: 5vw;
+    }
+    
+    .content p{
+        font-size: 3vw;
+        margin: 3vw 5vw;
+        margin-top: 25vw;
+    }
+    
+    
+    
+    .content button{
+        font-size: 4vw;
+        margin: 5vw;
+        margin-top: 12vw;
+        padding: 1vw 2vw;
+        }
+    
+    
+    .page3{
+        height: 80vh;
+    }
+    
+    .page3 video{
+        opacity: 1;
+    }
+
+    .page3 .rohit{
+       display: none;
+    }
+    
+    .page4{
+        height: 50vh;
+    }
+
+  
+    .page5{
+        padding: 0;
+    }
+    
+    
+    .page5 .solution{
+        height: 50%;
+    }
+    
+    .solution h2{
+        font-size: 4vw;
+        margin-bottom: 14vw;
+    }
+    
+    .solution h1{
+        font-size: 7vw;
+        margin-bottom: 16vw;
+    }
+    
+    .solution button{
+        font-size: 2.5vw;
+        padding: 1vw 1.7vw;
+    }
+    
+    .page5 .optimiz{
+        padding: 4vw 0;
+    }
+    
+    .optimiz .finc{
+        height: 24%;
+        margin-top: 30vw;
+        margin-bottom: 70vw;
+    }
+    
+    
+    .finc h1{
+        margin: 5vw;
+    }
+
+    #view{
+        margin-top: 25vw;
+        padding: 1.2vw 2.2vw;
+        font-size: 3.2vw;
+        border-radius: 1vw;
+    }
+
+    
+      .page6 header {
+        font-size: 3vw ;
+      }
+      .page6 header   p {
+          font-size: 2.2vw;
+        }
+    
+       aside {
+        padding: 5vw 2vw;
+       }
+
+        aside ul {
+          list-style-type: none;
+        }
+          aside li {
+            font-size: 1.5vw;
+          }
+            
+          
+    h3{
+        color: rgba(255,255,255,0.85);
+        font-size: 3vw;
+    }
+
   footer {
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1vw;
   }
 }

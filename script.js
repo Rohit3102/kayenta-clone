@@ -39,24 +39,35 @@ cntn.forEach(function(val){
 
 
 var crsr = document.querySelector(".cursor")
-var page = document.querySelector(".page3");
+var page = document.querySelector(".rohit");
 var vd = document.querySelector(".page3 video");
 
 
 page.addEventListener("mousemove", function(dets){
-    
-    crsr.style.left = dets.x + "px"
-    crsr.style.top = dets.y + "px"
+    gsap.to(crsr,{
+        x: dets.x - 55 + "px",
+        y: dets.y - 55 + "px"
+    })
 });
 
 page.addEventListener("mouseenter", function(){
-    crsr.style.opacity = 1
-    vd.style.opacity = 1
+    gsap.to(crsr,{
+        opacity: 1,
+    });
+    gsap.to(vd,{
+        opacity: 1,
+    });
+    page.style.opacity = 0
 })
 
 page.addEventListener("mouseleave", function(){
-    crsr.style.opacity = 0
-    vd.style.opacity = 0
+    gsap.to(vd,{
+        opacity: 0,
+    })
+    gsap.to(crsr,{
+        opacity: 0,
+    });
+    page.style.opacity = 1
 });
 
 
@@ -69,6 +80,6 @@ gsap.to(".finc  ", {
         scrub: 1,
         endTrigger: ".last",
     },
-    y: "-380vh"
+    y: "-373vh"
 });
 
