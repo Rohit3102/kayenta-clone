@@ -39,7 +39,8 @@ cntn.forEach(function(val){
 
 
 var crsr = document.querySelector(".cursor")
-var page = document.querySelector(".rohit");
+const rh = document.querySelector(".rohit")
+var page = document.querySelector(".page3");
 var vd = document.querySelector(".page3 video");
 
 
@@ -50,24 +51,24 @@ page.addEventListener("mousemove", function(dets){
     })
 });
 
-page.addEventListener("mouseenter", function(){
+rh.addEventListener("mouseenter", function(){
     gsap.to(crsr,{
         opacity: 1,
     });
     gsap.to(vd,{
         opacity: 1,
     });
-    page.style.opacity = 0
+    rh.style.opacity = 0
 })
 
-page.addEventListener("mouseleave", function(){
+rh.addEventListener("mouseleave", function(){
     gsap.to(vd,{
         opacity: 0,
     })
     gsap.to(crsr,{
         opacity: 0,
     });
-    page.style.opacity = 1
+    rh.style.opacity = 1
 });
 
 
